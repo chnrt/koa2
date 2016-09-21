@@ -1,0 +1,34 @@
+{
+  "name": "mykoa",
+  "version": "0.0.1",
+  "description": "my koa project",
+  "main": "entry.js",
+  "scripts": {
+    "test": "nodemon entry.js"
+  },
+  "keywords": [
+    "koa2",
+    "vue2"
+  ],
+  "author": "chen",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.0.0",
+    "koa-convert": "^1.2.0",
+    "koa-router": "^5.4.0",
+    "koa-send": "^3.2.0",
+    "koa-static": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.14.0",
+    "babel-preset-es2017": "^6.14.0",
+    "babel-register": "^6.14.0",
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb": "^11.1.0",
+    "eslint-config-airbnb-base": "^7.1.0",
+    "eslint-plugin-html": "^1.5.2",
+    "eslint-plugin-import": "^1.15.0",
+    "nodemon": "^1.10.2"
+  }
+}
