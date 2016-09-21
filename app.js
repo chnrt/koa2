@@ -1,6 +1,8 @@
 import Koa from 'koa';
 import send from 'koa-send';
 import server from 'koa-static';
+import convert from 'koa-convert';
+import path from 'path';
 
 import router from './src/router/index';
 
@@ -16,12 +18,14 @@ app.use(async (ctx, next) => {
   }
 });
 
-// send Files
-app.use(async (ctx, next) => {
-  ctx.send = send;
-  await next();
-});
+app.use(convert(server(path.resolve(__dirname, 'static'))));
 
-app.use(router.routes());
+// // send Files
+// app.use(async (ctx, next) => {
+//   ctx.send = send;
+//   await next();
+// });
+
+// app.use(router.routes());
 
 app.listen(3000);
