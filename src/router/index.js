@@ -10,9 +10,9 @@ api
     ctx.body = 'test!';
   })
   .get('/index', async (ctx) => {
-    console.log(path.resolve(__dirname, '../../static/index.html'));
+    console.log(path.resolve(__dirname, '../../index.html'));
     // 发送静态文件
-    await ctx.send(ctx, 'index.html', { root: path.resolve(__dirname, '../../static') });
+    await ctx.send(ctx, 'index.html', { root: path.resolve(__dirname, '../../') });
   });
 
 export default api;
