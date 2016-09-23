@@ -4,7 +4,7 @@
   "description": "my koa project",
   "main": "entry.js",
   "scripts": {
-    "test": "nodemon entry.js"
+    "test": "set DEBUG=*,-not_this && nodemon entry.js"
   },
   "keywords": [
     "koa2",
@@ -13,6 +13,7 @@
   "author": "chen",
   "license": "ISC",
   "dependencies": {
+    "debug": "^2.2.0",
     "koa": "^2.0.0",
     "koa-convert": "^1.2.0",
     "koa-router": "^7.0.1",
@@ -27,7 +28,6 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.14.0",
     "babel-preset-es2017": "^6.14.0",
     "babel-register": "^6.14.0",
-    "debug": "^2.2.0",
     "eslint": "^3.5.0",
     "eslint-config-airbnb": "^11.1.0",
     "eslint-config-airbnb-base": "^7.1.0",
