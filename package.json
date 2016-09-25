@@ -4,7 +4,7 @@
   "description": "my koa project",
   "main": "entry.js",
   "scripts": {
-    "test": "set DEBUG=*,-not_this && nodemon entry.js"
+    "test": "set DEBUG=router,-not_this && nodemon entry.js"
   },
   "keywords": [
     "koa2",
